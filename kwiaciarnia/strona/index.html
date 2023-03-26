@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kwiaciarnia</title>
+    <link rel="shortcut icon" href="flower.png" type="image/x-icon" />
+    <meta name="author" content="Krystian Długosz">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Zamówienie</h2>
+        <form class="orderForm">
+          <label for="name">Imię i nazwisko:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="phone">Numer telefonu:</label><br>
+          <input type="tel" id="phone" name="phone"><br>
+          <label for="product">Produkt:</label><br>
+          <input type="text" id="product" name="product"><br>
+          <label for="quantity">Ilość:</label><br>
+          <input type="number" id="quantity" name="quantity"><br>
+          <input type="submit" value="Zamów">
+        </form>
+      </div>
+    </div>
+
+    <div class="goToTop" class="showButton">
+      <img src="up-arrow.png" alt="arrow" />
+    </div>
+
+    <div class="fas fa-bars" id="menu"></div>
+    <nav>
+      <a href="#"><img src="flower.png" alt="Logo" /></a>
+      <ul class="listNotActive">
+        <li class="listElement">
+          <a class="listNav" href="#firmInfo">O firmie</a>
+        </li>
+        <li class="listElement"><a class="listNav" href="#ofert">Oferta</a></li>
+        <li class="listElement">
+          <a class="listNav" href="#shops">Nasze sklepy</a>
+        </li>
+        <li class="listElement" id="botList">
+          <a class="listNav" href="#contact">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="banner">
+      <div id="text">
+        <h1>Kwiaty na każdą okazję</h1>
+        <h2>Bukiet wiosennych życzeń</h2>
+        <button class="buy">Zamów kwiaty</button>
+      </div>
+    </section>
+
+    <section id="firmInfo">
+      <h1>Kwiaciarnia słoneczko</h1>
+      <div>
+        <p class="textp">
+          Witaj w naszej kwiaciarni rodzinnej! Jesteśmy zespołem, którego więzi
+          opierają się na miłości, pasji i dedykacji w pracy, którą wykonujemy.
+          Kwiaciarnia to dla nas nie tylko miejsce pracy, ale przede wszystkim
+          nasza pasja, którą z wielką przyjemnością przekazujemy naszym
+          klientom. Dzięki temu, że jesteśmy rodziną, możemy zagwarantować Ci,
+          że każde zamówienie jest dla nas niezwykle ważne, a każdy klient
+          traktowany jest z indywidualnym podejściem.
+        </p>
+
+        <button class="info3">O nas</button>
+        <button class="info1">30 lat na rynku</button>
+        <button class="info2">Zaopatrzenie w polse</button>
+      </div>
+    </section>
+
+    <section id="przerywnik"></section>
+
+    <section id="ofert">
+    <div id="ofertHeader"><h1>Oferta</h1></div>
+    <div id="ofertElements">
+      <div class="item">
+        <img src="bukiet.jpg" alt="bukiety" />
+        <h2>Bukiety</h2>
+      </div>
+      <div class="item">
+        <img src="wiazanka.jpg" alt="wiazanka" />
+        <h2>Wiązanki</h2>
+      </div>
+      <div class="item">
+        <img src="kosz.jpg" alt="kosz" />
+        <h2>Koszyki okazjonalne</h2>
+      </div>
+    </section>
+
+    <section id="przerywnik2"></section>
+
+    <section id="shops">
+      <h1>Nasze sklepy</h1>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d332227.3798812922!2d20.70729135445936!3d49.4178612348062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1679490799194!5m2!1spl!2spl"
+        margin-top="50px"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section id="contact">
+      <div id="textLogo">
+      <h3>Odwiedź nas</h3>
+        <div id="icons">
+          <a href="https://www.facebook.com"><img src="facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com"> <img src="instagram.png" alt="instagram"></a>
+          <a href="https://www.youtube.com"><img src="youtube.png" alt="youtube"></a>
+          <a href="https://www.pinterest.com"><img src="pinterest.png" alt="pinterest"></a>
+        </div>
+      </div>
+
+      <div id="mostView">
+        <h3>Najczęściej sprawdzane</h3>
+        <ul>
+          <li class="list">Róże</li>
+          <li class="list">Dowóz kwiatów</li>
+          <li class="list">Godziny otwarcia</li>
+          <li class="list">Jakie kwiaty wybrać</li>
+          <li class="list">Czy ilość ma znaczenie</li>
+        </ul>
+      </div>
+        <div id="newsleter">
+          <form id="newsletter-form">
+            <input type="email" id="email" name="email" placeholder="Podaj adres e-mail" maxlength="25" required>
+            <button type="submit">Zapisz się do newslettera</button>
+          </form>
+
+          <div id="newsletter-notification">
+            Dziękujemy za zapisanie się do newslettera!
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <p>Kwiacirnia słonczeczko wszytkie prawa zastrzeżone &copy;</p>
+    </footer>
+  </body>
+</html>
